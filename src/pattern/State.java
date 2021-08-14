@@ -2,7 +2,7 @@ package pattern;
 
 interface MobileAlertState
 {
-    public void alert(AlertStateContext ctx);
+    public void alert();
 }
 
 class AlertStateContext
@@ -21,14 +21,14 @@ class AlertStateContext
 
     public void alert()
     {
-        currentState.alert(this);
+        currentState.alert();
     }
 }
 
 class Vibration implements MobileAlertState
 {
     @Override
-    public void alert(AlertStateContext ctx)
+    public void alert()
     {
         System.out.println("vibration...");
     }
@@ -38,7 +38,7 @@ class Vibration implements MobileAlertState
 class Silent implements MobileAlertState
 {
     @Override
-    public void alert(AlertStateContext ctx)
+    public void alert()
     {
         System.out.println("silent...");
     }

@@ -39,7 +39,7 @@ class TextEditor{
     }
 
 }
-class TextWindowState{
+class TextWindowState{//Memento class
     private String text;
     public TextWindowState(String t){
         text = t;

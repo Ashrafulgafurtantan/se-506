@@ -2,7 +2,7 @@ package pattern;
 
 interface MobileAlertState
 {
-    public void alert();
+    void alert();
 }
 
 class AlertStateContext

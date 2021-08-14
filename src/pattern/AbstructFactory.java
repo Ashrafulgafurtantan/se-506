@@ -40,9 +40,7 @@ interface OsFactory{
 class WindowsFactory implements OsFactory{
 
     @Override
-    public Button createButton() {
-        return new WindowsButton();
-    }
+    public Button createButton() { return new WindowsButton(); }
 
     @Override
     public CheckBox createCheckBox() {

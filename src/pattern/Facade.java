@@ -1,14 +1,12 @@
 package pattern;
  interface Hotel
 {
-    public String getMenus();
+    String getMenus();
 }
  class NonVegRestaurant implements Hotel
 {
     public String getMenus()
-    {
-        return "Non Vegetable Menu";
-    }
+    { return "Non Vegetable Menu"; }
 }
 
  class VegRestaurant implements Hotel
